@@ -4,6 +4,8 @@ import 'package:desafio_flutter/movie.dart';
 import 'package:http/http.dart' as http;
 
 class API {
+  const API();
+
   Future<List<Movie>> fetchMovie() async {
     final response = await http.get(Uri.https(
       'api.themoviedb.org',

@@ -3,6 +3,8 @@ class Movie {
   String urlImage;
   String releaseDate;
 
+  Movie(this.title, this.releaseDate, this.urlImage);
+
   Movie.fromJson(Map<String, dynamic> json) {
     title = json['title'];
     urlImage = json['poster_path'];
