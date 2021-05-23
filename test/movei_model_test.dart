@@ -20,7 +20,6 @@ void main() {
 class MockMovie extends API {
   @override
   Future<List<Movie>> fetchMovie() async {
-    print('minhapica');
     await Future.delayed(
       Duration(seconds: 1),
     );
